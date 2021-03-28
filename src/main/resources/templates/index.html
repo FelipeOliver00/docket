@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no ">
+    
+    
+	<!-- main css -->
+	<link rel="stylesheet" th:href="@{~/main.css}">
+    <!-- responsividade -->
+    <link rel="stylesheet" th:href="@{~/responsive.css}">
+    
+    <link rel="stylesheet" type="text/css" th:href="@{~/estilo.css}">
+
+    <title>DOCKET</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h2 class="logo">Docket</h2>
+            <nav>
+                <a >Sobre</a>
+                <a  href="/cartorios " class="nav-link">Cartórios</a>
+                <a href="/new_cartorio">Cadastrar Cartórios</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="base-cartorio">
+            <div class="container">
+                <h3 class="titulo">Cartórios</h3>
+                <p class="descricao">Gerencie e cadastre os cartórios para conseguir realizar uma pré-análise</p>
+                <div class="botoes">
+                    <button role="button" class="botao"> <i class="fas fa-arrow-circle-down fa-lg"></i>Pesquise</button>
+                    <button role="button" class="botao"> <i class="fas fa-info-circle fa-lg"></i>DESCUBRA</button>
+                </div> 
+            </div>            
+        </div>       
+    </main>
+
+    
+
+    <script src="https://kit.fontawesome.com/d8c4d855fb.js" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
+

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+
+<head th:include="_template :: head"></head>
+
+<body>
+	<h1>Cadastrar Cartórios</h1>
+	
+	<nav th:include="_template :: menu"></nav>
+	<div class="content">
+	
+	<h2>Novo Cartório</h2>
+	
+	<form action="/cartorios" method="POST" th:object="${cartoriosz}">
+		
+			
+			<input name="name" type="text" placeholder="Nome do Cartório" >
+			<!--  th:classappend="${#fields.hasErrors('name')} ? invalid"/> -->
+			
+			
+			<input name="endereco" type="text" placeholder="Endereço do Cartório">
+			<!-- th:classappend="${#fields.hasErrors('endereco')} ? invalid"  -->
+			
+		
+			<input name="certidao" type="text" placeholder="Certidao Fornecida">
+			<!--  th:classappend="${#fields.hasErrors('certidao')} ? invalid"  -->
+		
+			
+			
+		<div class="actions">
+			<a href="/cartorios" class="btn">Cancelar</a>
+			<button class="btn" >Salvar</button>
+		</div>
+	</form>
+	</div>
+</body>
+</html>

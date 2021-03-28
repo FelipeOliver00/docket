@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:include="_template :: head"></head>
+
+<body>
+	<h1>Cartórios</h1>
+	
+	<nav th:include="_template :: menu"></nav>
+	
+	
+	
+	<a href="new_cartorio" class="btn-sm btn-primary">
+		<span class="material-icons">add</span>
+	</a>
+	
+	<div class="content">
+	<h2>Lista de Cartórios</h2>
+	<div class="cartorio" th:each="cartorio : ${cartoriosz}">
+	<ul>
+		
+		<li th:text="${cartorio.name}"></li>
+		<li th:text="${cartorio.endereco}"></li>
+		<li th:text="${cartorio.certidao}"></li>
+	</ul>	
+	<div class="cartorio-action" >
+	 	<a th:href="${'/cartorios/' + cartorio.id}">
+			<span class="material-icons yellow">create</span>
+		</a>
+	
+		<a th:href="${'/cartorios/delete/' + cartorio.id}">
+			<span class="material-icons">delete</span>
+		</a>
+	</div>
+	
+	</div>
+	</div>
+	
+</body>
+</html>
