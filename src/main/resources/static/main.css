@@ -1,5 +1,5 @@
 :root{
-    --roxo: #9014d8;
+    --roxo: #ffffff;
     --preta: #141414;
 }
 
@@ -40,6 +40,7 @@ header nav a{
     text-decoration: none;
     color: #AAA;
     margin-right: 30px;
+    font-family: 'Arial Black';
 }
 
 header nav a:hover{
@@ -64,12 +65,13 @@ header nav a:hover{
 .base-cartorio .descricao{
     margin-top: 10px;
     margin-bottom: 40px;
+    font-family: 'Arial Black';
 }
 
 .titulo{
     margin-top: 20%;
     font-size: 40px;
-    font-family: 'Trebuchet MS', Arial, sans-serif;
+    font-family: 'Arial Black', Arial, sans-serif;
 }
 
 .botao{
